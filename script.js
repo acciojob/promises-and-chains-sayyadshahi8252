@@ -4,7 +4,7 @@ function submitform(event) {
    let name=document.getElementById("name").value.trim();
    let age=document.getElementById("age").value.trim();
 	if(name==="" || age===""){
-		alert("Please enter valid details.")
+		alert("Please enter valid details")
 		return ;
 	}
 	let agePromise=new Promise((resolve,reject)=>{
