@@ -10,9 +10,9 @@ function submitform(event) {
 	let agePromise=new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			if(age>=18){
-				resolve("Welcome, . You can vote")
+				resolve(`Welcome, ${name}. You can vote.`);
 			}else{
-				reject("Oh sorry . You aren't old enough.")
+				reject(`Oh sorry ${name}. You aren't old enough.`);
 			}
 		},4000)
 	})
